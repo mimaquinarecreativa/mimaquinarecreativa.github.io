@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>jQuery elevateZoom Demo</title>
+    <script src='jquery-1.8.3.min.js'></script>
+    <script src='jquery.elevatezoom.js'></script>
+</head>
+<body>
+    <h1>
+        Basic Zoom Example</h1>
+    <img id="zoom_01" src='images/small/image1.png' data-zoom-image="images/large/image1.jpg" />
+    <img id="zoom_04a" src="images/small/image1.png" data-zoom-image="images/large/image1.jpg" />
+    <img id="zoom_04b" src="images/small/image1.png" data-zoom-image="images/large/image1.jpg" />
+    <img id="zoom_04c" style="width:50px;height:50px" src="images/small/image1.png" data-zoom-image="images/large/image1.jpg" />
+    <img id="zoom_04" src="images/small/image1.png" data-zoom-image="images/large/image1.jpg" />
+    - See more at: http://www.elevateweb.co.uk/image-zoom/examples#sthash.guqwYpB6.dpuf
+
+    bbbbbbbbbb<div id="demo-container" style="width:200px;height:200px"></div>uuuuuuu
+    <br />
+    see more examples online <a href="http://www.elevateweb.co.uk/image-zoom/examples">http://www.elevateweb.co.uk/image-zoom/examples</a>
+    <script>
+        $('#zoom_01').elevateZoom({
+            zoomType: "inner",
+            cursor: "crosshair",
+            zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 750
+        });
+        $("#zoom_04a").elevateZoom({ zoomWindowPosition: 1 });
+         $("#zoom_04b").elevateZoom({zoomWindowPosition: 12});
+         $("#zoom_04c").elevateZoom({zoomWindowPosition: "demo-container", zoomWindowHeight: 200, zoomWindowWidth:200, borderSize: 0, easing:true});
+         $("#zoom_04d").elevateZoom({ zoomWindowPosition: 1, zoomWindowOffetx: 10 });
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" style="background: none;">
+<head>
+
+    <title>jQuery elevateZoom Demo</title>
+    <script src='jquery-1.8.3.min.js'></script>
+    <script src='jquery.elevatezoom.js'></script>
+    <link rel="stylesheet" href="http://davidpg.brinkster.net/mirecre/wp-content/themes/indezinerpaperwall/style.css"
+        type="text/css" media="screen" />
+</head>
+   <body style="background: none;">
+    <form id="form1" runat="server">
+    <div id="content-page" style="padding: 0px;">
+        
+        <h2>
+            ¡Nuevos Packs Arcade!</h2>
+        <img id="zoom_A" style="width: 50px; height: 50px" src="../imagesarcade/img2P_3.jpg"
+             data-zoom-image="../imagesarcade/img2P_3_zoom.jpg" />
+        <img id="zoom_B" style="width: 50px; height: 50px" src="../imagesarcade/img2P_1.jpg"
+             data-zoom-image="../imagesarcade/img2P_1_zoom.jpg" />
+        <img id="zoom_C" style="width: 50px; height: 50px" src="../imagesarcade/img2P_2.jpg"
+             data-zoom-image="../imagesarcade/img2P_2_zoom.jpg" />
+        <div id="demo-container" style="width: 200px; height: 200px">
+        </div>
+        <script>
+            $("#zoom_A").elevateZoom({ zoomWindowPosition: "demo-container", zoomWindowHeight: 200, zoomWindowWidth: 200, borderSize: 0, easing: true });
+            $("#zoom_B").elevateZoom({ zoomWindowPosition: "demo-container", zoomWindowHeight: 200, zoomWindowWidth: 200, borderSize: 0, easing: true });
+            $("#zoom_C").elevateZoom({ zoomWindowPosition: "demo-container", zoomWindowHeight: 200, zoomWindowWidth: 200, borderSize: 0, easing: true });
+        </script>
+        <p>
+            Si ya tienes el libro indícanoslo en el formulario de solicitud y lo <strong>descontaremos</strong>
+            del pack.
+        </p>
+        <p>
+            Cualquier consulta puedes enviarla a <a title="Correo de contacto" href="mailto:mimaquinarecreativa@gmail.com">
+                                                     mimaquinarecreativa@gmail.com</a>.</p>
+        <p>
+    </div>
+    </form>
+    </body>
+</html>
