@@ -1,22 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-     <title>libro interactivo - ¿cómo hacer mi propia máquina recreativa arcade?</title>
+     <title>Libro Interactivo - ¿Cómo hacer mi propia máquina recreativa arcade?</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta content="free website template" name="keywords" />
-    <meta content="free website template" name="description" />
+    <meta content="Free Website Template" name="keywords" />
+    <meta content="Free Website Template" name="description" />
 
-    <!-- favicon -->
+    <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon" />
 
-    <!-- google font -->
+    <!-- Google Font -->
     <link
-      href="https://fonts.googleapis.com/css?family=open+sans:300,400|nunito:600,700"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700"
       rel="stylesheet"
     />
 
-    <!-- css libraries -->
+    <!-- CSS Libraries -->
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       rel="stylesheet"
@@ -33,142 +33,142 @@
       rel="stylesheet"
     />
 
-    <!-- template stylesheet -->
+    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/pygments.css" />
-    <link rel="stylesheet" href="css/easyzoom.css" />
-    <script type="text/javascript" src='elevatezoom-master/jquery-1.8.3.min.js'></script>
-    <script type="text/javascript" src='elevatezoom-master/jquery.elevatezoom.js'></script>
-    <script type="text/javascript" src="dist/easyzoom.js"></script>
+      <link rel="stylesheet" href="css/pygments.css" />
+  <link rel="stylesheet" href="css/easyzoom.css" />
+  <script type="text/javascript" src='elevatezoom-master/jquery-1.8.3.min.js'></script>
+  <script type="text/javascript" src='elevatezoom-master/jquery.elevatezoom.js'></script>
+  <script type="text/javascript" src="dist/easyzoom.js"></script>
      <script type="text/javascript">
-     var textolibrodigital = 'solicito información para conseguir el libro digital interactivo.';
-     var textolibrofisico = 'el libro físico está agotado (las últimas unidades sólo se pueden adquirir en la campaña crowdfunding. pincha en el bótón de abajo para conseguirlo. ¡el 1 de febrero iniciamos los envíos! ¡participa!';
-     var textopackone = 'solicito información para conseguir el libro digital interactivo + pack \"one player\".';
-     var textopacktwo = 'solicito información para conseguir el libro digital interactivo + pack \"two players\".';
-     var textopackonedescuento = 'solicito información para conseguir el pack \"one player\" con el descuento del libro, ya lo adquirí con anterioridad.';
-     var textopacktwodescuento = 'solicito información para conseguir el pack \"two players\" con el descuento del libro, ya lo adquirí con anterioridad.';
-     var textook = 'mensaje enviado, recibirás respuesta en breve.<br />muchas gracias por contactarnos.';
-     var _gaq = [['_setaccount', 'ua-2508361-9'], ['_trackpageview']];
+     var textoLibroDigital = 'Solicito información para conseguir el Libro Digital Interactivo.';
+     var textoLibroFisico = 'El Libro Físico está agotado (las últimas unidades sólo se pueden adquirir en la campaña crowdfunding. Pincha en el bótón de abajo para conseguirlo. ¡El 1 de febrero iniciamos los envíos! ¡Participa!';
+     var textoPackONE = 'Solicito información para conseguir el Libro Digital Interactivo + pack \"One Player\".';
+     var textoPackTWO = 'Solicito información para conseguir el Libro Digital Interactivo + pack \"Two Players\".';
+     var textoPackONEDescuento = 'Solicito información para conseguir el pack \"One Player\" con el descuento del libro, ya lo adquirí con anterioridad.';
+     var textoPackTWODescuento = 'Solicito información para conseguir el pack \"Two Players\" con el descuento del libro, ya lo adquirí con anterioridad.';
+     var textoOK = 'Mensaje enviado, recibirás respuesta en breve.<br />Muchas gracias por contactarnos.';
+     var _gaq = [['_setAccount', 'UA-2508361-9'], ['_trackPageview']];
      (function (d, t) {
-         var g = d.createElement(t), s = d.getelementsbytagname(t)[0];
+         var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
          g.src = ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js';
-         s.parentnode.insertbefore(g, s);
+         s.parentNode.insertBefore(g, s);
      }(document, 'script'));
 
-     function cambiarimagenlibro(id, textopie) {
-         document.getelementbyid('fotolibro1').style.display = 'none';
-         document.getelementbyid('fotolibro2').style.display = 'none';
-         document.getelementbyid('fotolibro3').style.display = 'none';
-         document.getelementbyid(id).style.display = 'block';
-         document.getelementbyid('pielibro').innerhtml = "foto: " + textopie;
+     function cambiarimagenLibro(id, textoPie) {
+         document.getElementById('fotoLibro1').style.display = 'none';
+         document.getElementById('fotoLibro2').style.display = 'none';
+         document.getElementById('fotoLibro3').style.display = 'none';
+         document.getElementById(id).style.display = 'block';
+         document.getElementById('PieLibro').innerHTML = "Foto: " + textoPie;
      }
-     function cambiarimagenpack1(id, textopie) {
-         document.getelementbyid('fotopack1_1').style.display = 'none';
-         document.getelementbyid('fotopack1_2').style.display = 'none';
-         document.getelementbyid('fotopack1_3').style.display = 'none';
-         document.getelementbyid(id).style.display = 'block';
-         document.getelementbyid('piepack1').innerhtml = "foto: " + textopie;
+     function cambiarimagenPack1(id, textoPie) {
+         document.getElementById('fotoPack1_1').style.display = 'none';
+         document.getElementById('fotoPack1_2').style.display = 'none';
+         document.getElementById('fotoPack1_3').style.display = 'none';
+         document.getElementById(id).style.display = 'block';
+         document.getElementById('PiePack1').innerHTML = "Foto: " + textoPie;
      }
-     function cambiarimagenpack2(id, textopie) {
-         document.getelementbyid('fotopack2_1').style.display = 'none';
-         document.getelementbyid('fotopack2_2').style.display = 'none';
-         document.getelementbyid('fotopack2_3').style.display = 'none';
-         document.getelementbyid(id).style.display = 'block';
-         document.getelementbyid('piepack2').innerhtml = "foto: " + textopie;
+     function cambiarimagenPack2(id, textoPie) {
+         document.getElementById('fotoPack2_1').style.display = 'none';
+         document.getElementById('fotoPack2_2').style.display = 'none';
+         document.getElementById('fotoPack2_3').style.display = 'none';
+         document.getElementById(id).style.display = 'block';
+         document.getElementById('PiePack2').innerHTML = "Foto: " + textoPie;
      }
 
-     function mostrarformulario(id, num) {
-         //$("#btnbotonenviar").val('enviar');
-         document.getelementbyid('btnbotonverkami').style.display = "none";
-         document.getelementbyid('btnbotonenviar').style.display = "inline";
+     function mostrarFormulario(id, num) {
+         //$("#btnBotonEnviar").val('Enviar');
+         document.getElementById('btnBotonVerkami').style.display = "none";
+         document.getElementById('btnBotonEnviar').style.display = "inline";
          if (num == 1) {
-             document.getelementbyid('idformlibro').classname = 'divformlibro divformfondo1 toplibro';
-             document.getelementbyid('dropseleccion').selectedindex = 0;
-             document.getelementbyid('txttexto').innerhtml = textolibrodigital;
-             document.getelementbyid('legendtit').innerhtml = "<span class='fmletra'>s</span>olicitar <span class='fmletrapeq'>l</span>ibro <span class='fmletrapeq'>i</span>nteractivo (transferencia)";
-             //document.getelementbyid('btnbotonenviar').style.display = "none";
-             //document.getelementbyid('btnbotonverkami').style.display = "inline";
+             document.getElementById('idFormLibro').className = 'divFormLibro divFormFondo1 topLibro';
+             document.getElementById('dropSeleccion').selectedIndex = 0;
+             document.getElementById('txtTexto').innerHTML = textoLibroDigital;
+             document.getElementById('legendTit').innerHTML = "<span class='fmletra'>S</span>olicitar <span class='fmletrapeq'>L</span>ibro <span class='fmletrapeq'>I</span>nteractivo (transferencia)";
+             //document.getElementById('btnBotonEnviar').style.display = "none";
+             //document.getElementById('btnBotonVerkami').style.display = "inline";
          }
          if (num == 2) {
-             document.getelementbyid('idformlibro').classname = 'divformlibro divformfondo2 toppack1';
-             document.getelementbyid('dropseleccion').selectedindex = 1;
-             document.getelementbyid('txttexto').innerhtml = textopackone;
-             document.getelementbyid('legendtit').innerhtml = "<span class='fmletra'>s</span>olicitar <span class='fmletrapeq'>p</span>ack \"<span class='fmletrapeq'>o</span>ne <span class='fmletrapeq'>p</span>layer\" (transferencia)";
-             //document.getelementbyid('btnbotonenviar').style.display = "none";
-             //document.getelementbyid('btnbotonverkami').style.display = "inline";
+             document.getElementById('idFormLibro').className = 'divFormLibro divFormFondo2 topPack1';
+             document.getElementById('dropSeleccion').selectedIndex = 1;
+             document.getElementById('txtTexto').innerHTML = textoPackONE;
+             document.getElementById('legendTit').innerHTML = "<span class='fmletra'>S</span>olicitar <span class='fmletrapeq'>p</span>ack \"<span class='fmletrapeq'>O</span>ne <span class='fmletrapeq'>P</span>layer\" (transferencia)";
+             //document.getElementById('btnBotonEnviar').style.display = "none";
+             //document.getElementById('btnBotonVerkami').style.display = "inline";
          }
          if (num == 3) {
-             document.getelementbyid('idformlibro').classname = 'divformlibro divformfondo3 toppack2';
-             document.getelementbyid('dropseleccion').selectedindex = 3;
-             document.getelementbyid('txttexto').innerhtml = textopacktwo;
-             document.getelementbyid('legendtit').innerhtml = "<span class='fmletra'>s</span>olicitar <span class='fmletrapeq'>p</span>ack \"<span class='fmletrapeq'>t</span>wo <span class='fmletrapeq'>p</span>layers\" (transferencia)";
-             //document.getelementbyid('btnbotonenviar').style.display = "none";
-             //document.getelementbyid('btnbotonverkami').style.display = "inline";
+             document.getElementById('idFormLibro').className = 'divFormLibro divFormFondo3 topPack2';
+             document.getElementById('dropSeleccion').selectedIndex = 3;
+             document.getElementById('txtTexto').innerHTML = textoPackTWO;
+             document.getElementById('legendTit').innerHTML = "<span class='fmletra'>S</span>olicitar <span class='fmletrapeq'>p</span>ack \"<span class='fmletrapeq'>T</span>wo <span class='fmletrapeq'>P</span>layers\" (transferencia)";
+             //document.getElementById('btnBotonEnviar').style.display = "none";
+             //document.getElementById('btnBotonVerkami').style.display = "inline";
          }
          if (num == 5) {
-             document.getelementbyid('idformlibro').classname = 'divformlibro divformfondo2 toppack1';
-             document.getelementbyid('dropseleccion').selectedindex = 4;
-             document.getelementbyid('txttexto').innerhtml = textopackonedescuento;
-             document.getelementbyid('legendtit').innerhtml = "<span class='fmletra'>s</span>olicitar <span class='fmletrapeq'>p</span>ack \"<span class='fmletrapeq'>o</span>ne <span class='fmletrapeq'>p</span>layer\" (transferencia)";
-             //document.getelementbyid('btnbotonenviar').style.display = "none";
-             //document.getelementbyid('btnbotonverkami').style.display = "inline";
+             document.getElementById('idFormLibro').className = 'divFormLibro divFormFondo2 topPack1';
+             document.getElementById('dropSeleccion').selectedIndex = 4;
+             document.getElementById('txtTexto').innerHTML = textoPackONEDescuento;
+             document.getElementById('legendTit').innerHTML = "<span class='fmletra'>S</span>olicitar <span class='fmletrapeq'>p</span>ack \"<span class='fmletrapeq'>O</span>ne <span class='fmletrapeq'>P</span>layer\" (transferencia)";
+             //document.getElementById('btnBotonEnviar').style.display = "none";
+             //document.getElementById('btnBotonVerkami').style.display = "inline";
          }
          if (num == 6) {
-             document.getelementbyid('idformlibro').classname = 'divformlibro divformfondo3 toppack2';
-             document.getelementbyid('dropseleccion').selectedindex = 5;
-             document.getelementbyid('txttexto').innerhtml = textopacktwodescuento;
-             document.getelementbyid('legendtit').innerhtml = "<span class='fmletra'>s</span>olicitar <span class='fmletrapeq'>p</span>ack \"<span class='fmletrapeq'>t</span>wo <span class='fmletrapeq'>p</span>layers\" (transferencia)";
-             //document.getelementbyid('btnbotonenviar').style.display = "none";
-             //document.getelementbyid('btnbotonverkami').style.display = "inline";
+             document.getElementById('idFormLibro').className = 'divFormLibro divFormFondo3 topPack2';
+             document.getElementById('dropSeleccion').selectedIndex = 5;
+             document.getElementById('txtTexto').innerHTML = textoPackTWODescuento;
+             document.getElementById('legendTit').innerHTML = "<span class='fmletra'>S</span>olicitar <span class='fmletrapeq'>p</span>ack \"<span class='fmletrapeq'>T</span>wo <span class='fmletrapeq'>P</span>layers\" (transferencia)";
+             //document.getElementById('btnBotonEnviar').style.display = "none";
+             //document.getElementById('btnBotonVerkami').style.display = "inline";
          }
-         document.getelementbyid(id).style.display = 'block';
+         document.getElementById(id).style.display = 'block';
 
      }
-     function ocultarelemento(id) {
-         document.getelementbyid(id).style.display = 'none';
+     function ocultarElemento(id) {
+         document.getElementById(id).style.display = 'none';
      }
-     function onchangedrop() {
-         document.getelementbyid('btnbotonverkami').style.display = "none";
-         document.getelementbyid('btnbotonenviar').style.display = "inline";
-         if (document.getelementbyid('dropseleccion').value == '0') {
-             document.getelementbyid('txttexto').innerhtml = textolibrodigital;
-             document.getelementbyid('legendtit').innerhtml = "<span class='fmletra'>s</span>olicitar <span class='fmletrapeq'>l</span>ibro <span class='fmletrapeq'>i</span>nteractivo (transferencia)";
-             //document.getelementbyid('btnbotonenviar').style.display = "none";
-             //document.getelementbyid('btnbotonverkami').style.display = "inline";
+     function OnChangeDrop() {
+         document.getElementById('btnBotonVerkami').style.display = "none";
+         document.getElementById('btnBotonEnviar').style.display = "inline";
+         if (document.getElementById('dropSeleccion').value == '0') {
+             document.getElementById('txtTexto').innerHTML = textoLibroDigital;
+             document.getElementById('legendTit').innerHTML = "<span class='fmletra'>S</span>olicitar <span class='fmletrapeq'>L</span>ibro <span class='fmletrapeq'>I</span>nteractivo (transferencia)";
+             //document.getElementById('btnBotonEnviar').style.display = "none";
+             //document.getElementById('btnBotonVerkami').style.display = "inline";
          }
-         if (document.getelementbyid('dropseleccion').value == '1') {
-             document.getelementbyid('txttexto').innerhtml = textopackone;
-             document.getelementbyid('legendtit').innerhtml = "<span class='fmletra'>s</span>olicitar <span class='fmletrapeq'>p</span>ack \"<span class='fmletrapeq'>o</span>ne <span class='fmletrapeq'>p</span>layer\" (transferencia)";
-             //document.getelementbyid('btnbotonenviar').style.display = "inline";
-             //document.getelementbyid('btnbotonverkami').style.display = "none";
+         if (document.getElementById('dropSeleccion').value == '1') {
+             document.getElementById('txtTexto').innerHTML = textoPackONE;
+             document.getElementById('legendTit').innerHTML = "<span class='fmletra'>S</span>olicitar <span class='fmletrapeq'>p</span>ack \"<span class='fmletrapeq'>O</span>ne <span class='fmletrapeq'>P</span>layer\" (transferencia)";
+             //document.getElementById('btnBotonEnviar').style.display = "inline";
+             //document.getElementById('btnBotonVerkami').style.display = "none";
          }
-         if (document.getelementbyid('dropseleccion').value == '2') {
-             document.getelementbyid('txttexto').innerhtml = textopacktwo;
-             document.getelementbyid('legendtit').innerhtml = "<span class='fmletra'>s</span>olicitar <span class='fmletrapeq'>p</span>ack \"<span class='fmletrapeq'>t</span>wo <span class='fmletrapeq'>p</span>layers\" (transferencia)";
-             //document.getelementbyid('btnbotonenviar').style.display = "inline";
-             //document.getelementbyid('btnbotonverkami').style.display = "none";
+         if (document.getElementById('dropSeleccion').value == '2') {
+             document.getElementById('txtTexto').innerHTML = textoPackTWO;
+             document.getElementById('legendTit').innerHTML = "<span class='fmletra'>S</span>olicitar <span class='fmletrapeq'>p</span>ack \"<span class='fmletrapeq'>T</span>wo <span class='fmletrapeq'>P</span>layers\" (transferencia)";
+             //document.getElementById('btnBotonEnviar').style.display = "inline";
+             //document.getElementById('btnBotonVerkami').style.display = "none";
          }
-         if (document.getelementbyid('dropseleccion').value == '3') {
-             document.getelementbyid('txttexto').innerhtml = '';
-             //document.getelementbyid('btnbotonenviar').style.display = "inline";
-             //document.getelementbyid('btnbotonverkami').style.display = "none";
+         if (document.getElementById('dropSeleccion').value == '3') {
+             document.getElementById('txtTexto').innerHTML = '';
+             //document.getElementById('btnBotonEnviar').style.display = "inline";
+             //document.getElementById('btnBotonVerkami').style.display = "none";
          }
-         if (document.getelementbyid('dropseleccion').value == '4') {
-             document.getelementbyid('txttexto').innerhtml = textolibrofisico;
-             //document.getelementbyid('btnbotonenviar').style.display = "none";
-             //document.getelementbyid('btnbotonverkami').style.display = "none";
+         if (document.getElementById('dropSeleccion').value == '4') {
+             document.getElementById('txtTexto').innerHTML = textoLibroFisico;
+             //document.getElementById('btnBotonEnviar').style.display = "none";
+             //document.getElementById('btnBotonVerkami').style.display = "none";
          }
-         if (document.getelementbyid('dropseleccion').value == '5') {
-             document.getelementbyid('txttexto').innerhtml = textopackonedescuento;
-             document.getelementbyid('legendtit').innerhtml = "<span class='fmletra'>s</span>olicitar <span class='fmletrapeq'>p</span>ack \"<span class='fmletrapeq'>o</span>ne <span class='fmletrapeq'>p</span>layer\" (transferencia)";
-             //document.getelementbyid('btnbotonenviar').style.display = "inline";
-             //document.getelementbyid('btnbotonverkami').style.display = "none";
+         if (document.getElementById('dropSeleccion').value == '5') {
+             document.getElementById('txtTexto').innerHTML = textoPackONEDescuento;
+             document.getElementById('legendTit').innerHTML = "<span class='fmletra'>S</span>olicitar <span class='fmletrapeq'>p</span>ack \"<span class='fmletrapeq'>O</span>ne <span class='fmletrapeq'>P</span>layer\" (transferencia)";
+             //document.getElementById('btnBotonEnviar').style.display = "inline";
+             //document.getElementById('btnBotonVerkami').style.display = "none";
          }
-         if (document.getelementbyid('dropseleccion').value == '6') {
-             document.getelementbyid('txttexto').innerhtml = textopacktwodescuento;
-             document.getelementbyid('legendtit').innerhtml = "<span class='fmletra'>s</span>olicitar <span class='fmletrapeq'>p</span>ack \"<span class='fmletrapeq'>t</span>wo <span class='fmletrapeq'>p</span>layers\" (transferencia)";
-             //document.getelementbyid('btnbotonenviar').style.display = "none";
-             //document.getelementbyid('btnbotonverkami').style.display = "none";
+         if (document.getElementById('dropSeleccion').value == '6') {
+             document.getElementById('txtTexto').innerHTML = textoPackTWODescuento;
+             document.getElementById('legendTit').innerHTML = "<span class='fmletra'>S</span>olicitar <span class='fmletrapeq'>p</span>ack \"<span class='fmletrapeq'>T</span>wo <span class='fmletrapeq'>P</span>layers\" (transferencia)";
+             //document.getElementById('btnBotonEnviar').style.display = "none";
+             //document.getElementById('btnBotonVerkami').style.display = "none";
          }
      }
  </script>
@@ -205,19 +205,19 @@
          display: none;
      }
 
-     .divformfondo1 {
+     .divFormFondo1 {
          background: #fff url(imagesarcade/fondo_ventana1.jpg) repeat center bottom;
      }
 
-     .divformfondo2 {
+     .divFormFondo2 {
          background: #fff url(imagesarcade/fondo_ventana2.jpg) repeat center bottom;
      }
 
-     .divformfondo3 {
+     .divFormFondo3 {
          background: #fff url(imagesarcade/fondo_ventana3.jpg) repeat center bottom;
      }
 
-     .divformlibro {
+     .divFormLibro {
          width: 545px;
          height: 378px;
          border: #000 1px solid;
@@ -228,15 +228,15 @@
          display: none;
      }
 
-     .toplibro {
+     .topLibro {
          top: 450px;
      }
 
-     .toppack1 {
+     .topPack1 {
          top: 3150px;
      }
 
-     .toppack2 {
+     .topPack2 {
          top: 1550px;
      }
 
@@ -245,11 +245,11 @@
          float: right;
      }
 
-     .estilobotonx {
+     .estilobotonX {
          height: 30px;
          margin: 0;
-         background: transparent; /*background: #e2721b url(/comimages/images/button.jpg) repeat-x;*/
-         font: bold 11px 'lucida grande', verdana, helvetica, sans-serif;
+         background: transparent; /*background: #e2721b url(/ComImages/images/button.jpg) repeat-x;*/
+         font: bold 11px 'Lucida Grande', Verdana, Helvetica, Sans-Serif;
          text-decoration: none;
          color: #825a2d;
          background-color: #eee8aa;
@@ -259,15 +259,15 @@
          font-size: 1.3em;
      }
 
-         .estilobotonx:hover {
+         .estilobotonX:hover {
              color: #825a2d;
              text-decoration: none;
              cursor: hand;
          }
 
      .estiloboton {
-         background: transparent; /*background: #e2721b url(/comimages/images/button.jpg) repeat-x;*/
-         font: bold 11px 'lucida grande', verdana, helvetica, sans-serif;
+         background: transparent; /*background: #e2721b url(/ComImages/images/button.jpg) repeat-x;*/
+         font: bold 11px 'Lucida Grande', Verdana, Helvetica, Sans-Serif;
          text-decoration: none;
          color: #825a2d;
          background-color: #eee8aa;
@@ -296,7 +296,7 @@
          float: right;
      }
 
-     .textotitular, .textotitular:hover {
+     .textoTitular, .textoTitular:hover {
          font-size: 1.3em;
      }
 
@@ -304,7 +304,7 @@
          text-align: center;
      }
 
-     .fmfieldmarco {
+     .fmfieldMarco {
          margin-left: 30px;
          margin-right: 30px;
      }
@@ -388,7 +388,7 @@
          margin-bottom: 30px;
      }
 
-     .estiloh3 {
+     .estiloH3 {
          margin-top: 25px;
      }
  </style>
@@ -396,11 +396,11 @@
       * {
         box-sizing: border-box;
       }
-      .openbtn {
+      .openBtn {
         display: flex;
         justify-content: left;
       }
-      .openbutton {
+      .openButton {
         border: none;
         border-radius: 5px;
         background-color: #1c87c9;
@@ -409,12 +409,12 @@
         cursor: pointer;
         position: fixed;
       }
-      .loginpopup {
+      .loginPopup {
         position: relative;
         text-align: center;
         width: 100%;
       }
-      .formpopup {
+      .formPopup {
         display: none;
         position: fixed;
         left: 50%;
@@ -423,25 +423,25 @@
         border: 3px solid #999999;
         z-index: 9;
       }
-      .formcontainer {
+      .formContainer {
         max-width: 400px;
         padding: 20px;
         background-color: #fff;
       }
-      .formcontainer input[type=text],
-      .formcontainer input[type=password] {
+      .formContainer input[type=text],
+      .formContainer input[type=password] {
         width: 100%;
         padding: 15px;
         margin: 5px 0 20px 0;
         border: none;
         background: #eee;
       }
-      .formcontainer input[type=text]:focus,
-      .formcontainer input[type=password]:focus {
+      .formContainer input[type=text]:focus,
+      .formContainer input[type=password]:focus {
         background-color: #ddd;
         outline: none;
       }
-      .formcontainer .btn {
+      .formContainer .btn {
         padding: 12px 20px;
         border: none;
         background-color: #8ebf42;
@@ -451,18 +451,18 @@
         margin-bottom: 15px;
         opacity: 0.8;
       }
-      .formcontainer .cancel {
+      .formContainer .cancel {
         background-color: #cc0000;
       }
-      .formcontainer .btn:hover,
-      .openbutton:hover {
+      .formContainer .btn:hover,
+      .openButton:hover {
         opacity: 1;
       }
     </style>
   </head>
 
   <body>
-    <!-- nav bar start -->
+    <!-- Nav Bar Start -->
     <div class="navbar navbar-expand-lg bg-light navbar-light">
       <div class="container-fluid">
         <a href="index.html" class="navbar-brand">libro <span>mirecre</span></a>
@@ -1697,11 +1697,11 @@
         </div>
       </div>
     </div>
-    <!-- footer end -->
+   <!-- Footer End -->
 
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-    <!-- javascript libraries -->
+    <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="lib/easing/easing.min.js"></script>
@@ -1710,11 +1710,11 @@
     <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
-    <!-- contact javascript file -->
-    <script src="mail/jqbootstrapvalidation.min.js"></script>
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
-    <!-- template javascript -->
+    <!-- Template Javascript -->
     <script src="js/main.js"></script>
   </body>
 </html>
